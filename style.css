@@ -1,0 +1,241 @@
+:root {
+  --main-font: "Inter", sans-serif;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin: 20px 200px;
+  background-color: hsl(230, 17%, 14%);
+}
+
+/* Header */
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: #fff;
+  font-family: var(--main-font);
+}
+
+header .left h1 {
+  font-family: var(--main-font);
+  font-weight: 700;
+  margin-bottom: 0;
+  font-size: 25px;
+}
+
+header .left p {
+  font-family: var(--main-font);
+  color: hsl(228, 34%, 66%);
+  font-weight: bold;
+  font-size: 13px;
+}
+
+header .right p {
+  font-family: var(--main-font);
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 0;
+  margin-right: 20px;
+}
+
+header .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .right .outside {
+  width: 60px;
+  height: 30px;
+  border-radius: 20px;
+  background-image: linear-gradient(
+    to right,
+    hsl(210, 78%, 56%),
+    hsl(146, 68%, 55%)
+  );
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 5px;
+}
+
+header .right .outside:hover {
+  cursor: pointer;
+}
+
+header .right .inside {
+  width: 20px;
+  height: 20px;
+  background-color: hsl(228, 28%, 20%);
+  border-radius: 50%;
+}
+
+main .total .card {
+  padding: 15px 20px;
+  margin: 15px;
+  background: hsl(228, 28%, 20%);
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+main .total .card .card-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main .total .card .card-title p {
+  margin-bottom: 0;
+  margin-left: 5px;
+  color: hsl(228, 12%, 44%);
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 12px;
+}
+
+main .total .card .card-body {
+  padding: 10px;
+}
+main .total .card .card-body p {
+  text-align: center;
+  letter-spacing: 3px;
+  color: hsl(228, 12%, 44%);
+}
+main .total .card .card-body p.number {
+  font-style: var(--main-font);
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 0;
+  color: #fff;
+}
+
+main .total .card .card-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .total .card .card-bottom p {
+  margin: 0;
+  margin-left: 5px;
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 12px;
+  color: hsl(163, 72%, 41%);
+}
+
+main .total .card.youtube .card-bottom p {
+  color: hsl(356, 69%, 56%);
+}
+
+main .total .card.youtube {
+  border-top: 5px solid hsl(348, 97%, 39%);
+}
+main .total .card.insta {
+  border-top: 5px solid hsl(356, 69%, 56%);
+}
+main .total .card.facebook,
+main .total .card.twitter {
+  border-top: 5px solid hsl(208, 92%, 53%);
+}
+
+/* Today */
+
+main .today {
+  margin: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+main .today h2 {
+  font-family: var(--main-font);
+  font-size: 25px;
+  font-weight: 700;
+  color: #fff;
+}
+
+main .today .card {
+  background: hsl(228, 28%, 20%);
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+main .today .details .row .card .card-title,
+main .today .details .row .card .card-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 0;
+  padding-left: 0;
+}
+
+main .today .details .row .card .card-title p {
+  margin-bottom: 0;
+  font-family: var(--main-font);
+  color: hsl(228, 12%, 44%);
+  font-size: 13px;
+  font-weight: 700;
+}
+main .today .details .row .card .card-body .row {
+  align-items: center;
+}
+main .today .details .row .card .card-body p {
+  margin-bottom: 0;
+  margin-left: 5px;
+  font-family: var(--main-font);
+  font-size: 30px;
+  font-weight: 700;
+}
+
+main .today .details .row .card .card-body .row p {
+  margin-bottom: 0;
+  margin-left: 5px;
+  font-family: var(--main-font);
+  font-size: 12px;
+}
+
+main .today .details .row .card.f1 .card-body .row p,
+main .today .details .row .card.i1 .card-body .row p,
+main .today .details .row .card.i2 .card-body .row p,
+main .today .details .row .card.r1 .card-body .row p,
+main .today .details .row .card.r2 .card-body .row p {
+  color: hsl(163, 72%, 41%);
+}
+
+main .today .details .row .card.f2 .card-body .row p,
+main .today .details .row .card.y1 .card-body .row p,
+main .today .details .row .card.y2 .card-body .row p {
+  color: hsl(356, 69%, 56%);
+}
+
+/* Media Quries */
+
+@media (max-width: 990px) {
+  body {
+    margin: 20px 80px;
+  }
+  header {
+    flex-direction: column;
+  }
+  header .right {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 680px) {
+  body {
+    margin: 30px;
+  }
+}
